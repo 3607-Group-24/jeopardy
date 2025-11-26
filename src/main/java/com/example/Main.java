@@ -20,12 +20,11 @@ public class Main {
         int choice = 1;
         try { choice = Integer.parseInt(sc.nextLine().trim()); } catch (Exception ignored) {}
 
-        String resource = switch (choice) {
-            case 2 -> "sample_game_JSON.json";
-            case 3 -> "sample_game_XML.xml";
-            default -> "sample_game_CSV.csv";
-        };
+        String resource = "sample_game_CSV.csv";
+        if (choice == 2) resource = "sample_game_JSON.json";
+        else if (choice == 3) resource = "sample_game_XML.xml";
 
+        
         ProcessLogger logger = ProcessLogger.getInstance("GAME001");
         Game game = new Game(logger);
         GameController controller = new GameController(game, logger);
