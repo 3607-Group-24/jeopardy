@@ -62,6 +62,6 @@ public class ProcessLogger {
     }
     
     private String safe(String s){
-        return s==null?"":("\"" + s.replace("\"","'")+"\""); 
+        return s==null?"":("\"" + s.replace("\"","'")+"\"");
     }
 }
