@@ -1,5 +1,6 @@
 package com.example.model;
-import java.time.Instant;   
+
+import java.time.Instant;
 
 public class GameEvent {
     private final String caseId;
