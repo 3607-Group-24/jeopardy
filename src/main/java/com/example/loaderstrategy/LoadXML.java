@@ -43,5 +43,5 @@ public class LoadXML implements QuestionLoader {
         NodeList nl = parent.getElementsByTagName(tag);
         if (nl == null || nl.getLength() == 0) return "";
         return nl.item(0).getTextContent().trim();
-    }
+    }
 }
