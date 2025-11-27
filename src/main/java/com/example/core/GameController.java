@@ -1,5 +1,11 @@
 package com.example.core;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Collectors;
+
 import com.example.loaderstrategy.QuestionLoader;
 import com.example.model.Category;
 import com.example.model.Player;
@@ -7,10 +13,6 @@ import com.example.model.Question;
 import com.example.state.GameOnState;
 import com.example.utilities.ProcessLogger;
 import com.example.utilities.ReportGenerator;
-
-
-import java.util.*;
-import java.util.stream.Collectors;
 
 public class GameController {
 
@@ -27,7 +29,8 @@ public class GameController {
         this.loader = loader;
     }
 
-    //board loading
+    /* ================= LOAD BOARD ================= */
+
     public void loadBoardFromResource(String path) throws Exception {
         Map<String, Category> board = loader.loadQuestions(path);
         game.setBoard(board);
@@ -36,8 +39,8 @@ public class GameController {
         logger.logSystem("File Loaded Successfully");
     }
 
+    /* ================= PLAYER SETUP ================= */
 
-    //setting up the players
     public void setupPlayers(int count, Scanner sc) {
         logger.logSystem("Select Player Count");
 
@@ -53,15 +56,14 @@ public class GameController {
         game.setState(new GameOnState());
     }
 
-    
+    /* ================= MAIN LOOP ================= */
 
-    // the game loop
     public void startGameLoop(Scanner sc) {
         game.startGame();
 
         while (!game.allQuestionsUsed() && !game.isEnded()) {
             Player current = game.getCurrentPlayer();
-            System.out.println("\n " + current.getId() + "(Score: " + current.getScore() + ") ---");
+            System.out.println("\n--- " + current.getId() + " (Score: " + current.getScore() + ") ---");
 
             List<String> categories = new ArrayList<>(game.getBoard().keySet());
             for (int i = 0; i < categories.size(); i++) {
@@ -88,7 +90,6 @@ public class GameController {
                 System.out.println("Invalid category number.");
                 continue;
             }
-
 
             String categoryName = categories.get(catIndex);
             Category category = game.getBoard().get(categoryName);
@@ -143,8 +144,8 @@ public class GameController {
         return values.get(0);
     }
 
+    /* ================= FINISH ================= */
 
-    //complete game and generate report
     public void finishGame(String reportPath, String eventLogPath) throws Exception {
         logger.logSystem("Generate Report");
 
@@ -160,4 +161,3 @@ public class GameController {
         logger.logSystem("Generate Event Log");
     }
 }
-
