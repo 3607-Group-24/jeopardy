@@ -1,0 +1,20 @@
+Case_ID,Player_ID,Activity,Timestamp,Category,Question_Value,Answer_Given,Result,Score_After_Play
+"GAME001","System","Load File","2025-11-27T02:25:17.594738600Z","",,"","",
+"GAME001","System","File Loaded Successfully","2025-11-27T02:25:17.594738600Z","",,"","",
+"GAME001","System","Select Player Count","2025-11-27T02:25:19.174297600Z","",,"","",
+"GAME001","al","Enter Player Name","2025-11-27T02:25:21.648795400Z","",,"al","N/A",0
+"GAME001","bl","Enter Player Name","2025-11-27T02:25:24.181395900Z","",,"bl","N/A",0
+"GAME001","al","Select Category","2025-11-27T02:25:33.965169100Z","File Handling",,"","N/A",0
+"GAME001","al","Select Question","2025-11-27T02:25:33.966176900Z","File Handling",100,"","N/A",0
+"GAME001","al","Answer Question","2025-11-27T02:25:49.377203200Z","File Handling",100,"A","Correct",100
+"GAME001","bl","Select Category","2025-11-27T02:26:00.006814800Z","Control Structures",,"","N/A",0
+"GAME001","bl","Select Question","2025-11-27T02:26:00.006814800Z","Control Structures",200,"","N/A",0
+"GAME001","bl","Answer Question","2025-11-27T02:26:21.771649100Z","Control Structures",200,"B","Correct",200
+"GAME001","al","Select Category","2025-11-27T02:26:32.408151400Z","File Handling",,"","N/A",100
+"GAME001","al","Select Question","2025-11-27T02:26:32.408151400Z","File Handling",200,"","N/A",100
+"GAME001","al","Answer Question","2025-11-27T02:26:38.210680900Z","File Handling",200,"D","Incorrect",-100
+"GAME001","bl","Select Category","2025-11-27T02:26:49.816791500Z","Functions",,"","N/A",200
+"GAME001","bl","Select Question","2025-11-27T02:26:49.816791500Z","Functions",100,"","N/A",200
+"GAME001","bl","Answer Question","2025-11-27T02:26:57.388973900Z","Functions",100,"D","Incorrect",100
+"GAME001","System","Exit Game","2025-11-27T02:27:05.729753800Z","",,"","",
+"GAME001","System","Generate Report","2025-11-27T02:27:05.729753800Z","",,"","",

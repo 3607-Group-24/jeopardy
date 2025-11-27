@@ -50,5 +50,5 @@ public class LoadJSON implements QuestionLoader {
         return "";
     }
 
-    private String defaultIfEmpty(String s, String def) { return (s == null || s.isBlank()) ? def : s; }
+    private String defaultIfEmpty(String s, String def) { return (s == null || s.isBlank()) ? def : s; }
 }
