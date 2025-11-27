@@ -1,0 +1,28 @@
+JEOPARDY PROGRAMMING GAME REPORT
+================================
+
+Case ID: GAME001
+
+Players: al, bl
+
+Gameplay Summary:
+-----------------
+Turn 1: al selected File Handling for 100 pts
+Question: (see event log)
+Answer: A — Correct (Score after: 100)
+
+Turn 2: bl selected Control Structures for 200 pts
+Question: (see event log)
+Answer: B — Correct (Score after: 200)
+
+Turn 3: al selected File Handling for 200 pts
+Question: (see event log)
+Answer: D — Incorrect (Score after: -100)
+
+Turn 4: bl selected Functions for 100 pts
+Question: (see event log)
+Answer: D — Incorrect (Score after: 100)
+
+Final Scores:
+al: -100
+bl: 100

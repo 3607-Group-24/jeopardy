@@ -1,4 +1,4 @@
-package com.example.loader;
+package com.example.loaderstrategy;
 
 import java.net.URL;
 import java.nio.file.Paths;
@@ -7,7 +7,6 @@ import java.util.Map;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
-import com.example.loaderstrategy.*;
 
 import com.example.model.Category;
 

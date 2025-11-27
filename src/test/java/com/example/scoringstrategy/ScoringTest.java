@@ -1,8 +1,7 @@
-package com.example.scoring;
+package com.example.scoringstrategy;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
-import com.example.scoringstrategy.*;
 
 public class ScoringTest {
     @Test

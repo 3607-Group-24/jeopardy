@@ -1,8 +1,8 @@
 package com.example.model;
-
 import java.time.Instant;
 
-public class GameEvent {
+public class GameEvent{
+    
     private final String caseId;
     private final String playerId;
     private final String activity;
@@ -13,9 +13,7 @@ public class GameEvent {
     private final String result;
     private final Integer scoreAfter;
 
-    public GameEvent(String caseId, String playerId, String activity, Instant timestamp,
-                     String category, Integer questionValue, String answerGiven,
-                     String result, Integer scoreAfter) {
+    public GameEvent(String caseId, String playerId, String activity, Instant timestamp, String category, Integer questionValue, String answerGiven, String result, Integer scoreAfter){
         this.caseId = caseId;
         this.playerId = playerId;
         this.activity = activity;
@@ -27,13 +25,38 @@ public class GameEvent {
         this.scoreAfter = scoreAfter;
     }
 
-    public String getCaseId() { return caseId; }
-    public String getPlayerId() { return playerId; }
-    public String getActivity() { return activity; }
-    public Instant getTimestamp() { return timestamp; }
-    public String getCategory() { return category; }
-    public Integer getQuestionValue() { return questionValue; }
-    public String getAnswerGiven() { return answerGiven; }
-    public String getResult() { return result; }
-    public Integer getScoreAfter() { return scoreAfter; }
+    public String getCaseId(){ 
+        return caseId;
+    }
+
+    public String getPlayerId(){
+        return playerId; 
+    }
+
+    public String getActivity(){ 
+        return activity; 
+    }
+
+    public Instant getTimestamp(){ 
+        return timestamp; 
+    }
+    public String getCategory(){
+        return category; 
+    }
+
+    public Integer getQuestionValue(){ 
+        return questionValue; 
+    }
+
+    public String getAnswerGiven(){ 
+        return answerGiven; 
+    }
+    public String getResult(){ 
+        return result; 
+    }
+
+    public Integer getScoreAfter(){
+        return scoreAfter; 
+    }
+    
 }
